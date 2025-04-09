@@ -106,14 +106,14 @@
       let errores2 = parseFloat(document.getElementById("errores2").value) || 0;
 
       let netas1 = aciertos1 - (errores1 * 0.333);
-      let nota1 = (netas1 * 3) / 50;
+      let nota1 = (netas1 * 3) / 75;
 
       let nota2 = 0;
       let totalNota = 0;
 
       if (nota1 >= 1.5) {
         let netas2 = aciertos2 - (errores2 * 0.333);
-        nota2 = (netas2 * 3) / 25;
+        nota2 = (netas2 * 3) / 50;
         totalNota = ((nota1 + nota2) * 40) / 6;
       } else {
         totalNota = (nota1 * 20) / 3;
